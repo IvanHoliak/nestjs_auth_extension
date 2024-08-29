@@ -1,4 +1,4 @@
-import { NestFactory } from '@nestjs/core';
+import { NestFactory, repl } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { Logger, ValidationPipe } from '@nestjs/common';
 
@@ -12,5 +12,7 @@ async function bootstrap() {
   await app.listen(port);
 
   logger.log(`[🚀🚀🚀 Server] Server is running on PORT=${port}`);
+
+  // await repl(AppModule);
 }
 bootstrap();
