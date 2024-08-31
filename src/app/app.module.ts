@@ -7,6 +7,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { appConfig } from 'src/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { IamModule } from 'src/iam/iam.module';
+import { ApiKeysModule } from 'src/api-keys/api-keys.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { IamModule } from 'src/iam/iam.module';
     CoffeesModule,
     UsersModule,
     IamModule,
+    ApiKeysModule,
   ],
   controllers: [AppController],
   providers: [AppService],

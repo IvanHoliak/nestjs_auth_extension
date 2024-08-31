@@ -1,0 +1,5 @@
+export enum CoffeePermission {
+  CREATE_COFFEE = 'CREATE_COFFEE',
+  UPDATE_COFFEE = 'UPDATE_COFFEE',
+  DELETE_COFFEE = 'DELETE_COFFEE',
+}
